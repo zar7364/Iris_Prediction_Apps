@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
 # Ayo Prediksi Jenis Bunga Iris!
-Deveoped by Nezar Abdilah Prakasa
+Develoved and Improved by Nezar Abdilah Prakasa
 """)
 
 st.sidebar.header('User Input Parameters')

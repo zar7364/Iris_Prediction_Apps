@@ -8,7 +8,7 @@ st.write("""
 Develoved and Improved by Nezar Abdilah Prakasa
 """)
 
-st.sidebar.header('User Input Parameters')
+st.sidebar.header('Masukan Datamu dibawah :')
 
 def user_input_features():
     sepal_length = st.sidebar.slider('Panjang Mahkota Bunga (mm)', 4.3, 7.9, 5.4)
@@ -42,7 +42,8 @@ st.write(iris.target_names)
 
 st.subheader('Prediksi')
 st.write(iris.target_names[prediction])
-st.write(prediction)
+
+#st.write(prediction)
 
 #st.subheader('Peluang Prediksi dalam %')
 #st.write(prediction_proba)

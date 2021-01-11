@@ -11,10 +11,10 @@ Develoved and Improved by Nezar Abdilah Prakasa
 st.sidebar.header('Masukan Datamu dibawah :')
 
 def user_input_features():
-    sepal_length = st.sidebar.slider('Panjang Mahkota Bunga (mm)', 4.3, 7.9, 5.4)
-    sepal_width = st.sidebar.slider('Lebar Mahkota Bunga (mm)', 2.0, 4.4, 3.4)
-    petal_length = st.sidebar.slider('Panjang Kuncup (mm)', 1.0, 6.9, 1.3)
-    petal_width = st.sidebar.slider('Lebar Kuncup(mm)', 0.1, 2.5, 0.2)
+    sepal_length = st.slider('Panjang Mahkota Bunga (mm)', 4.3, 7.9, 5.4)
+    sepal_width = st.slider('Lebar Mahkota Bunga (mm)', 2.0, 4.4, 3.4)
+    petal_length = st.slider('Panjang Kuncup (mm)', 1.0, 6.9, 1.3)
+    petal_width = st.slider('Lebar Kuncup(mm)', 0.1, 2.5, 0.2)
     data = {'Panjang Mahkota Bunga': sepal_length,
             'Lebar Mahkota Bunga': sepal_width,
             'Panjang Kuncup': petal_length,

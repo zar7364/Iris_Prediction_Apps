@@ -5,15 +5,16 @@ from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
 # Ayo Prediksi Jenis Bunga Iris!
+Deveoped by Nezar Abdilah Prakasa
 """)
 
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
-    sepal_length = st.sidebar.slider('Panjang Mahkota Bunga', 4.3, 7.9, 5.4)
-    sepal_width = st.sidebar.slider('Lebar Mahkota Bunga', 2.0, 4.4, 3.4)
-    petal_length = st.sidebar.slider('Panjang Kuncup', 1.0, 6.9, 1.3)
-    petal_width = st.sidebar.slider('Lebar Kuncup', 0.1, 2.5, 0.2)
+    sepal_length = st.sidebar.slider('Panjang Mahkota Bunga (mm)', 4.3, 7.9, 5.4)
+    sepal_width = st.sidebar.slider('Lebar Mahkota Bunga (mm)', 2.0, 4.4, 3.4)
+    petal_length = st.sidebar.slider('Panjang Kuncup (mm)', 1.0, 6.9, 1.3)
+    petal_width = st.sidebar.slider('Lebar Kuncup(mm)', 0.1, 2.5, 0.2)
     data = {'Panjang Mahkota Bunga': sepal_length,
             'Lebar Mahkota Bunga': sepal_width,
             'Panjang Kuncup': petal_length,
@@ -41,7 +42,9 @@ st.write(iris.target_names)
 
 st.subheader('Prediksi')
 st.write(iris.target_names[prediction])
-#st.write(prediction)
+st.write(prediction)
 
-st.subheader('Peluang Prediksi dalam %')
-st.write(prediction_proba)
+#st.subheader('Peluang Prediksi dalam %')
+#st.write(prediction_proba)
+
+#st.write(" Kolom 0 menyatakan jenis Sentosa,
